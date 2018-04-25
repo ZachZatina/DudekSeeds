@@ -13,20 +13,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	@RequestMapping("/welcome")
+	@RequestMapping("/")
 	public String registerForm() {
 
-		return "Registration";
+		return "index";
 	}
 
-	@RequestMapping("success")
-	public ModelAndView registerSuccess(@RequestParam("fName") String firstName, @RequestParam("lName") String lastName,
-			@RequestParam("gender") String gender, @RequestParam("test") String checkbox) {
-
-		String sayHello = "Hello, " + firstName + " " + gender + " " + checkbox;
-		// first parameter is the name of the jsp
-		// second parameter is the name of the Expressions Language tag variable name
-		// third parameter is an object or data that should go back into our jsp page
-		return new ModelAndView("success", "helloMsg", sayHello);
-	}
 }
