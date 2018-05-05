@@ -11,7 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
 	rel='stylesheet' type='text/css'>
 	
-<title>Insert title here</title>
+<title>Contact Us</title>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="SeedpPricing">Seed Pricing</a></li>
+				<li><a href="SeedPricing">Seed Pricing</a></li>
 				<li><a href="HerbicideUsage">Herbicide Usage</a></li>
 				<li><a href="Agronomics">Agronomics</a></li>
 				<li><a href="Videos">Videos</a></li>
@@ -40,9 +40,9 @@
 	</div>
 	</nav>
 	
-	<h1>Contact Us</h1>
+	<h1>About Us</h1>
 	
-	<a href="guestbook">Guestbook</a>
+	<a href="Guestbook">Guestbook</a>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

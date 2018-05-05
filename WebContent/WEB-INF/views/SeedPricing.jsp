@@ -11,7 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
 	rel='stylesheet' type='text/css'>
 	
-<title>Spring MVC Welcome</title>
+<title>Seed Pricing</title>
 
 </head>
 <body>
@@ -34,14 +34,14 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="HerbicideUsage">Herbicide Usage</a></li>
 				<li><a href="Agronomics">Agronomics</a></li>
-				<li><a href="Cideos">Videos</a></li>
-				<li><a href="ContactUs">Contact Us</a></li>
+				<li><a href="Videos">Videos</a></li>
+				<li><a href="ContactUs">About Us</a></li>
 			</ul>
 		</div>
 	</div>
 	</nav>
 	
-<h1>Seed Pricing</h1>
+<h1>Seed Pricing $65 per bag</h1>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -11,7 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
 	rel='stylesheet' type='text/css'>
 	
-<title>Insert title here</title>
+<title>Agronomics</title>
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 				<li><a href="SeedPricing">Seed Pricing</a></li>
 				<li><a href="HerbicideUsage">Herbicide Usage</a></li>
 				<li><a href="Videos">Videos</a></li>
-				<li><a href="ContactUs">Contact Us</a></li>
+				<li><a href="ContactUs">About Us</a></li>
 			</ul>
 		</div>
 	</div>

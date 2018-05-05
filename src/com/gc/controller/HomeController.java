@@ -19,4 +19,34 @@ public class HomeController {
 		return "index";
 	}
 
+	@RequestMapping("/Agronomics")
+	public String agronomics() {
+		return "Agronomics";
+	}
+
+	@RequestMapping("/SeedPricing")
+	public String seedPricing() {
+		return "SeedPricing";
+	}
+
+	@RequestMapping("/HerbicideUsage")
+	public String herbicideUsage() {
+		return "HerbicideUsage";
+	}
+
+	@RequestMapping("/Videos")
+	public String videos() {
+		return "Videos";
+	}
+
+	@RequestMapping("/ContactUs")
+	public String contactUs() {
+		return "ContactUs";
+	}
+
+	@RequestMapping("/Guestbook")
+	public String geustbook() {
+		return "Guestbook";
+	}
+
 }
