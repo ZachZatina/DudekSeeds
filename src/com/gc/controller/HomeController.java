@@ -24,10 +24,10 @@ public class HomeController {
 		return "Agronomics";
 	}
 
-	@RequestMapping("/SeedPricing")
-	public String seedPricing() {
-		return "SeedPricing";
-	}
+//	@RequestMapping("/SeedPricing")
+//	public String seedPricing() {
+//		return "SeedPricing";
+//	}
 
 	@RequestMapping("/HerbicideUsage")
 	public String herbicideUsage() {

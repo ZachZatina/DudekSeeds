@@ -41,8 +41,27 @@
 	</div>
 	</nav>
 	
-<h1>Seed Pricing $65 per bag</h1>
-
+<div class="container">
+<div class="jumbotron">
+<p>We offer 80k (55lb) bags, 5lb plot bags, and 1lb garden bags</p>
+<br>
+<p>Prices are as follows:</p>
+<table border="1">
+<tr>
+<th>Bag Type</th>
+<th>Full Price</th>
+<th>Pay by Dec 1st Price</th>
+</tr>
+<c:forEach var="price" items="${priceList}">
+<tr>
+<td>${price.type}</td>
+<td>${price.price}</td>
+<td>${dPrice}</td>
+</tr>
+</c:forEach>
+</table>
+</div>
+</div>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script
