@@ -23,7 +23,7 @@ public class SeedPricingController {
 		ArrayList<SeedPriceDTO> pList = listSeedPrices();
 		double[] dPrice = getDiscountPrice(pList);
 		System.out.println(dPrice[1]);
-		System.out.println(pList.get(1).toString());
+		System.out.println(pList.get(1).getType().toString());
 		System.out.println("the stuff should be above this");
 		
 		return new ModelAndView("SeedPricing", "priceList", pList);
@@ -52,5 +52,5 @@ public class SeedPricingController {
 		
 		return dPrice;
 	}
-
+	
 }
