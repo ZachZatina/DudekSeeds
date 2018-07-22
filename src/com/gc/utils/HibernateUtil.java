@@ -10,6 +10,7 @@ public class HibernateUtil {
 	private HibernateUtil() {
 	}
 	
+	@SuppressWarnings("deprecation")
 	private static SessionFactory buildSessionFactory() {
 		try {
 			Configuration cfg = new Configuration().configure("hibernate.cfg.xml");

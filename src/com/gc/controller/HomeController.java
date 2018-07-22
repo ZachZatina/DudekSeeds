@@ -24,11 +24,6 @@ public class HomeController {
 		return "Agronomics";
 	}
 
-//	@RequestMapping("/SeedPricing")
-//	public String seedPricing() {
-//		return "SeedPricing";
-//	}
-
 	@RequestMapping("/HerbicideUsage")
 	public String herbicideUsage() {
 		return "HerbicideUsage";
@@ -39,14 +34,14 @@ public class HomeController {
 		return "Videos";
 	}
 
-	@RequestMapping("/ContactUs")
-	public String contactUs() {
-		return "ContactUs";
-	}
+//	@RequestMapping("/ContactUs")
+//	public String contactUs() {
+//		return "ContactUs";
+//	}
 
-	@RequestMapping("/Guestbook")
-	public String geustbook() {
-		return "Guestbook";
-	}
+//	@RequestMapping("/Guestbook")
+//	public String geustbook() {
+//		return "Guestbook";
+//	}
 
 }

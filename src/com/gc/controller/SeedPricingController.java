@@ -1,5 +1,6 @@
 package com.gc.controller;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import org.hibernate.Criteria;
@@ -19,7 +20,6 @@ public class SeedPricingController {
 	
 	@RequestMapping("/SeedPricing")
 	public ModelAndView showPricing(Model model) {
-		
 		ArrayList<SeedPriceDTO> pList = listSeedPrices();
 		double[] dPrice = getDiscountPrice(pList);
 		System.out.println(dPrice[1]);

@@ -10,11 +10,11 @@ import javax.persistence.Table;
 @Table(name = "contact list")
 public class ContactListDTO {
 
-	int guest_number;
-	String name;
-	String email;
-	String comment;
-	String date;
+	private int guest_number;
+	private String name;
+	private String email;
+	private String comment;
+	private String date;
 
 	public ContactListDTO() {
 	}
