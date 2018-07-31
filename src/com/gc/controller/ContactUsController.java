@@ -28,10 +28,10 @@ public class ContactUsController {
 		return new ModelAndView("ContactUs", "contactList", contactList);
 	}
 	
-	@RequestMapping("ContactUs")
+	@RequestMapping("/ContactUs")
 	public ModelAndView contactUsPage(Model model) {
 		ArrayList<ContactListDTO> contactList = createContactList();
-		return new ModelAndView("contactUs", "contactList", contactList);
+		return new ModelAndView("ContactUs", "contactList", contactList);
 	}
 	
 	private ArrayList<ContactListDTO> createContactList() {
@@ -40,6 +40,7 @@ public class ContactUsController {
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(ContactListDTO.class);
 		ArrayList<ContactListDTO> contactList = (ArrayList<ContactListDTO>) crit.list();
+		System.out.println(contactList.size());
 		tx.commit();
 		sess.close();
 		return contactList;
@@ -52,10 +53,10 @@ public class ContactUsController {
 
 		String date = getCurrentDate();
 		ContactListDTO contactList = new ContactListDTO();
-		contactList.setName(info[0]);
-		contactList.setEmail(info[1]);
-		contactList.setComment(info[2]);
-		contactList.setDate(date);
+		contactList.setVisitor_Name(info[0]);
+		contactList.setVisitor_Email(info[1]);
+		contactList.setVisitor_Comment(info[2]);
+		contactList.setVisit_Date(date);
 
 		sess.save(contactList);
 		tx.commit();

@@ -57,16 +57,16 @@
 			</table>
 			<p>Contact Info Here</p>
 			<p>
-				<a href="Guestbook">Check in that you visted here!</a>
+				<a href="Guestbook">Check in that you visited here!</a>
 			</p>
 			<table border="0">
-				<c:forEach var="visitor" items="${contactList}">
+				<c:forEach var="guest" items="${contactList}">
 					<tr>
-						<td>${visitor.name}</td>
-						<td>${visitor.date}</td>
+						<td>${guest.visitor_name}</td>
+						<td>${guest.visit_date}</td>
 					</tr>
 					<tr>
-						<td>${visitor.comment}</td>
+						<td>${guest.visitor_comment}</td>
 					</tr>
 				</c:forEach>
 			</table>

@@ -20,6 +20,7 @@ public class SeedPriceDTO {
 	}
 	
 	public SeedPriceDTO(String type, float price, float discount, int number) {
+		super();
 		this.type = type;
 		this.price = price;
 		this.discount = discount;

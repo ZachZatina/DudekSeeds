@@ -7,24 +7,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "contact list")
+@Table(name = "contact_list")
 public class ContactListDTO {
 
 	private int guest_number;
-	private String name;
-	private String email;
-	private String comment;
-	private String date;
+	private String visitor_name;
+	private String visitor_email;
+	private String visitor_comment;
+	private String visit_date;
 
 	public ContactListDTO() {
 	}
 
-	public ContactListDTO(int guest_number, String name, String email, String comment, String date) {
+	public ContactListDTO(int guest_number, String visitor_name, String visitor_email, String visitor_comment, String visit_date) {
+		super();
 		this.guest_number = guest_number;
-		this.name = name;
-		this.email = email;
-		this.comment = comment;
-		this.date = date;
+		this.visitor_name = visitor_name;
+		this.visitor_email = visitor_email;
+		this.visitor_comment = visitor_comment;
+		this.visit_date = visit_date;
 	}
 	
 	@Id
@@ -38,40 +39,43 @@ public class ContactListDTO {
 		this.guest_number = guest_number;
 	}
 
-	@Column(name="name")
-	public String getName() {
-		return name;
+	@Column
+	public String getVisitor_Name() {
+		return visitor_name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setVisitor_Name(String visitor_name) {
+		this.visitor_name = visitor_name;
 	}
 	
-	@Column(name="email")
-	public String getEmail() {
-		return email;
+	@Column
+	public String getVisitor_Email() {
+		return visitor_email;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setVisitor_Email(String visitor_email) {
+		this.visitor_email = visitor_email;
 	}
 	
-	@Column(name="comment")
-	public String getComment() {
-		return comment;
+	@Column
+	public String getVisitor_Comment() {
+		return visitor_comment;
 	}
 
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setVisitor_Comment(String visitor_comment) {
+		this.visitor_comment = visitor_comment;
 	}
 	
-	@Column(name="date")
-	public String getDate() {
-		return date;
+	@Column
+	public String getVisit_Date() {
+		return visit_date;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setVisit_Date(String visit_date) {
+		this.visit_date = visit_date;
 	}
 
+	public String toString() {
+		return "String";
+	}
 }
