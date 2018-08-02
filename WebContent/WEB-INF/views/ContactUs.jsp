@@ -62,11 +62,11 @@
 			<table border="0">
 				<c:forEach var="guest" items="${contactList}">
 					<tr>
-						<td>${guest.visitor_name}</td>
-						<td>${guest.visit_date}</td>
+						<td>${(guest.Visitor_Name)}</td>
+						<td>${guest.Visit_Date}</td>
 					</tr>
 					<tr>
-						<td>${guest.visitor_comment}</td>
+						<td>${guest.Visitor_Comment}</td>
 					</tr>
 				</c:forEach>
 			</table>

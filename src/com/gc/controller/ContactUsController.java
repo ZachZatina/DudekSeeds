@@ -18,7 +18,7 @@ import com.gc.utils.HibernateUtil;
 @Controller
 public class ContactUsController {
 
-	@RequestMapping("/Guestbook")
+	@RequestMapping("/checkinfo")
 	public ModelAndView guestbookPage(@RequestParam("input") String[] info, Model model) {
 		if (info != null) {
 			addToGuestBook(info);

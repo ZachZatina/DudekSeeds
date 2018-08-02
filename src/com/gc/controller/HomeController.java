@@ -34,14 +34,9 @@ public class HomeController {
 		return "Videos";
 	}
 
-//	@RequestMapping("/ContactUs")
-//	public String contactUs() {
-//		return "ContactUs";
-//	}
-
-//	@RequestMapping("/Guestbook")
-//	public String geustbook() {
-//		return "Guestbook";
-//	}
+	@RequestMapping("/Guestbook")
+	public String geustbook() {
+		return "Guestbook";
+	}
 
 }

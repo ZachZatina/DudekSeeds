@@ -39,7 +39,7 @@ public class ContactListDTO {
 		this.guest_number = guest_number;
 	}
 
-	@Column
+	@Column(name="visitor_name")
 	public String getVisitor_Name() {
 		return visitor_name;
 	}
@@ -48,7 +48,7 @@ public class ContactListDTO {
 		this.visitor_name = visitor_name;
 	}
 	
-	@Column
+	@Column(name="visitor_email")
 	public String getVisitor_Email() {
 		return visitor_email;
 	}
@@ -57,7 +57,7 @@ public class ContactListDTO {
 		this.visitor_email = visitor_email;
 	}
 	
-	@Column
+	@Column(name="visitor_comment")
 	public String getVisitor_Comment() {
 		return visitor_comment;
 	}
@@ -66,7 +66,7 @@ public class ContactListDTO {
 		this.visitor_comment = visitor_comment;
 	}
 	
-	@Column
+	@Column(name="visit_date")
 	public String getVisit_Date() {
 		return visit_date;
 	}
